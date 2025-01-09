@@ -43,5 +43,17 @@ CREATE TABLE tab(
     CHECK (age >= 18 AND age <= 25) ---> It checks the condition if it's true then creates the table
 );
 
+--> ex
+CREATE TABLE tab(
+    name VARCHAR(40),
+    age INT,
+    city VARCHAR(100),
+    CHECK (age >= 18 AND city = "Dhaka")
+);
+
+---> if 
+INSERT INTO tab(name, age, city) VALUES ("Nadim", 24, "Nrayanganj"); ---> ERROR because of Narayanganj
+
+
 
 --------> FOREIGN KEY
