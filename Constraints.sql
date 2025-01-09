@@ -51,6 +51,14 @@ CREATE TABLE tab(
     CHECK (age >= 18 AND city = "Dhaka")
 );
 
+--> OR
+CREATE TABLE tab(
+    name VARCHAR(40),
+    age INT,
+    city VARCHAR(100),
+    CONSTRAINT chk CHECK (age >= 18 AND city = "Dhaka")
+);
+
 ---> if 
 INSERT INTO tab(name, age, city) VALUES ("Nadim", 24, "Nrayanganj"); ---> ERROR because of Narayanganj
 
