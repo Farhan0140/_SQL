@@ -45,4 +45,31 @@ DROP TABLE table_name; ---> Delete Table
 
 
 -----------------> PRINT Table
-SELECT * FROM tab;
+SELECT * FROM tab;   ----> * means ALL
+
+
+--> if we want to print only name column
+CREATE TABLE tab(
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(40),
+    country VARCHAR(100),
+    email VARCHAR(50)
+);
+
+INSERT INTO tab(name, country, email)
+VALUES
+    ("Eula Drake", "Svalbard & Jan Mayen", "jo@op.co"),
+    ("Elizabeth Harris", "Ghana", "kek@lokiguz.hn"),
+    ("Anthony Arnold", "South Korea", "pi@jij.tk"),
+    ("Lottie Vargas", "Cyprus", "ni@zufnorro.sj"),
+    ("Francis Robertson", "Jersey", "laz@nouha.lc"),
+    ("Luella Jacobs", "New Caledonia", "gojud@cibze.fi"),
+    ("Rebecca Carlson", "Palau", "tu@pirfiz.kp"),
+    ("Bettie Taylor", "Austria", "orjipoh@uwvottet.net"),
+    ("Martin Barton", "Serbia", "tucub@fubcuv.na"),
+    ("Myrtle Roberts", "Sweden", "boklevcum@da.th")
+
+
+SELECT name FROM tab;  ---> Print only name
+SELECT name, email FROM tab; ---> Print only name & email
+SELECT DISTINCT country FROM tab; ---> Print only UNIQUE values
