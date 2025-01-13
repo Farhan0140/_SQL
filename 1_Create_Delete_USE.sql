@@ -1,4 +1,13 @@
+General Order (Up to Bottom)
+    1. SELECT column(s)
+    2. FROM table_name
+    3. WHERE condition
+    4. GROUP BY column(s)
+    5. HAVING condition 
+    6. ORDER BY column(s) ASC/DESC
 
+
+    
 ---------------> Create & Delete Database
 CREATE DATABASE db_name;
 
