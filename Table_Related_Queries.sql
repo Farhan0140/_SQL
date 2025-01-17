@@ -40,7 +40,7 @@ VALUES
     ("Roxie Clayton", 20, 75, 1.71, "C", "Namibia", "bubfoav@bac.hm")
 
 
----------------------> UPDATE
+-----------------------------------------> UPDATE
 --->
 UPDATE student
 SET grade = "A+"
@@ -52,4 +52,29 @@ SET grade = "A+", country = "Bangladesh"
 WHERE grade = "A" OR country = "Namibia";
 
 
----------------------> UPDATE
+--->
+UPDATE student 
+SET marks = 200
+WHERE id = 7;
+
+
+--->
+UPDATE student 
+SET marks = 200, cgpa = 4.00, grade = "O"
+WHERE id = 7;
+
+
+--->
+UPDATE student 
+SET grade = "B+", cgpa = 3.00
+WHERE marks BETWEEN 80 AND 90;
+
+
+--->
+UPDATE student 
+SET marks = marks + 5;
+
+
+------------------------------------------> DELETE
+DELETE FROM student
+WHERE marks <= 20;
