@@ -1,32 +1,35 @@
 CREATE TABLE student(
-    id INT PRIMARY KEY AUTO_INCREMENT,
-    name VARCHAR(40),
-    age INT,
+    id INT PRIMARY KEY, 
+    name VARCHAR(100) NOT NULL, 
+    age INT NOT NULL, 
+    sec VARCHAR(5),
     marks INT,
     cgpa FLOAT,
-    country VARCHAR(100),
-    email VARCHAR(50)
+    grade VARCHAR(10),
+    phone VARCHAR(50) UNIQUE, 
+    country VARCHAR(100) NOT NULL,
+    email VARCHAR(100) UNIQUE NOT NULL
 );
 
-INSERT INTO student(name, age, marks, cgpa, country, email)
+INSERT INTO student(id, name, age, sec, marks, cgpa, grade, phone, country, email)
 VALUES
-    ("Leila Houston", 24, 65, 3.45, "Namibia", "rikre@lumi.hn"),
-    ("Corey Obrien", 22, 98, 2.37, "Madagascar", "gaejakam@nilor.ye"),
-    ("Jimmy Webster", 24, 60, 3.41, "Namibia", "bud@bahbabri.nl"),
-    ("Virgie Chambers", 21, 51, 1.38, "Cayman Islands", "uliig@baik.mk"),
-    ("Violet Murphy", 20, 91, 1.76, "Namibia", "nonsemu@ata.eh"),
-    ("Hilda Clayton", 25, 91, 2.47, "Guernsey", "kutugfu@ze.pn"),
-    ("Jeanette Mendoza", 22, 90, 3.79, "Eritrea", "ropew@ve.nu"),
-    ("Polly Rios", 25, 87, 3.62, "Lebanon", "zu@zu.mc"),
-    ("Jeff Oliver", 20, 73, 3.82, "Portugal", "vielumuv@kav.dz"),
-    ("Ruth Burgess", 20, 73, 3.35, "Namibia", "ilur@je.ng"),
-    ("Nellie Austin", 25, 56, 3.49, "Lebanon", "za@nava.ls"),
-    ("Bernice Moran", 25, 75, 3.38, "Croatia", "kipak@bu.kw"),
-    ("Alfred Knight", 25, 97, 3.19, "Namibia", "sa@uzkevo.tv"),
-    ("Jonathan Maxwell", 25, 57, 3.33, "Venezuela", "ga@gumi.id"),
-    ("Mina Barton", 22, 71, 2.21, "Namibia", "lakifa@niw.com"),
-    ("Evelyn Love", 25, 69, 2.12, "Falkland Islands", "naj@polpov.kw"),
-    ("Roxie Clayton", 20, 75, 1.71, "Namibia", "bubfoav@bac.hm")
+    (101, "Leila Houston", 24, "A", 30, 2.00, "F", "01403563478", "Namibia", "rikre@lumi.hn"),
+    (102, "Corey Obrien", 22, "A", 98, 4.00, "A+", "01609976678","Madagascar", "gaejakam@nilor.ye"),
+    (103, "Jimmy Webster", 24, "C", 60, 2.50, "B", "01905775667","Namibia", "bud@bahbabri.nl"),
+    (104, "Virgie Chambers", 21, "B", 51, 2.68, "B+", "01203576678","Cayman Islands", "uliig@baik.mk"),
+    (105, "Violet Murphy", 20, "A", 91, 4.00, "A+","01207897667", "Namibia", "nonsemu@ata.eh"),
+    (106, "Hilda Clayton", 25, "C", 91, 4.00, "A+","01999966678", "Guernsey", "kutugfu@ze.pn"),
+    (107, "Jeanette Mendoza", 22, "B", 20, 1.66, "F","01888566678", "Eritrea", "ropew@ve.nu"),
+    (108, "Polly Rios", 25, "A", 87, 3.62, "A", "01905778678","Lebanon", "zu@zu.mc"),
+    (109, "Jeff Oliver", 20, "A", 73, 3.24, "B+","01783566678", "Portugal", "vielumuv@kav.dz"),
+    (110, "Ruth Burgess", 20, "B", 56, 3.00, "C","01603478867", "Namibia", "ilur@je.ng"),
+    (111, "Nellie Austin", 25, "C", 33, 1.49, "D", "01803562688","Lebanon", "za@nava.ls"),
+    (112, "Bernice Moran", 25, "D", 36, 1.60, "D", "01403544788","Croatia", "kipak@bu.kw"),
+    (113, "Alfred Knight", 25, "A", 78, 3.19, "B","01403565775", "Namibia", "sa@uzkevo.tv"),
+    (114, "Jonathan Maxwell", 25, "A", 40, 2.33, "D","01703997667", "Venezuela", "ga@gumi.id"),
+    (115, "Mina Barton", 22, "B", 71, 2.61, "B", "01303898678","Namibia", "lakifa@niw.com"),
+    (116, "Evelyn Love", 25, "C", 45, 2.12, "D","01904566678", "Falkland Islands", "naj@polpov.kw"),
+    (117, "Roxie Clayton", 20, "D", 2, 1.00, "F", "01693526678", "Namibia", "bubfoav@bac.hm")
 
 
 --------------------> COUNT()
