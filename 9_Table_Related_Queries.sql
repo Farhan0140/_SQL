@@ -80,3 +80,5 @@ SET marks = marks + 5;
 ------------------------------------------> DELETE
 DELETE FROM student
 WHERE marks <= 20;
+
+DELETE FROM student;
