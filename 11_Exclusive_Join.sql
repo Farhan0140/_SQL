@@ -37,3 +37,14 @@ RIGHT JOIN course AS B
 ON A.id = B.id
 WHERE A.id IS NULL; 
 
+
+-------------------------------------------> FULL Exclusive JOIN
+SELECT * FROM student AS A
+LEFT JOIN course AS B 
+ON A.id = B.id
+WHERE B.id IS NULL
+UNION
+SELECT * FROM student AS A 
+RIGHT JOIN course AS B 
+ON A.id = B.id 
+WHERE A.id IS NULL;    
