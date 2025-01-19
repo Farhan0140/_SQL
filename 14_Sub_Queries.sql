@@ -58,6 +58,39 @@ WHERE id IN (
 
 
 -->EX-3
---->Find the max marks from the students of Delhi
---->Step 1. Find the students of Delhi
+CREATE TABLE student(
+    id INT PRIMARY KEY,
+    name VARCHAR(50),
+    marks INT,
+    city VARCHAR(50)
+);
+
+INSERT INTO student(id, name, marks, city)
+VALUES
+  (101, "Nadim", 78, "Dhaka"),
+  (102, "Farhan", 93, "Bogra"),
+  (103, "Anil", 85, "Comilla"),
+  (104, "Bob", 96, "Dhaka"),
+  (105, "Farah", 92, "Bogra"),
+  (106, "Bhumika", 82, "Dhaka")
+
+--->Find the max marks from the students of Dhaka
+--->Step 1. Find the students of Dhaka
+SELECT * FROM student
+WHERE city = "Dhaka"; 
+
+
 --->Step 2. Find their max marks using the sublist in step 1
+SELECT MAX(marks) 
+FROM (
+    SELECT marks FROM student
+    WHERE city = "Dhaka"
+) AS temp;
+------------> It creates a temp table where all students from Dhaka
+
+
+
+--> OR
+SELECT MAX(marks)
+FROM student
+WHERE city = "Dhaka";
