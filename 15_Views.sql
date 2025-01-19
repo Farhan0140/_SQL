@@ -39,6 +39,15 @@ SELECT id, name, sec, marks, cgpa, grade FROM student;
 SELECT * FROM for_teacher;
 
 
+---->
+SELECT * FROM for_teacher
+WHERE marks > 90;
+
+----->
+DROP VIEW for_teacher;
+
+
+
 ----->
 CREATE VIEW for_marks AS
 SELECT id, name, cgpa, grade FROM student;
