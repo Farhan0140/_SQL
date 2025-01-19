@@ -1,4 +1,3 @@
-----------------------------------------> INNER JOIN
 
 CREATE TABLE student(
     id INT PRIMARY KEY,
@@ -26,6 +25,7 @@ VALUES
     (107, "CSE")
 
 
+----------------------------------------> INNER JOIN
 SELECT *
 FROM student
 INNER JOIN course
