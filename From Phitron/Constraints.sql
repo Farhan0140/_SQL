@@ -75,3 +75,16 @@ CREATE TABLE Library(
 );
 
 
+
+-- Composite Primary Key
+
+CREATE TABLE Course(
+
+    Course_Name VARCHAR(50),
+    University VARCHAR(10),
+    Credit INT,
+
+    PRIMARY KEY(Course_Name, University)
+    
+);
+
