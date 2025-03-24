@@ -64,3 +64,14 @@ CREATE TABLE student(
 );
 
 
+
+CREATE TABLE Library(
+
+    Book_Name VARCHAR(50) PRIMARY KEY,
+    Id CHAR(4), -- who borrowed this book
+
+    FOREIGN KEY( Id ) REFERENCES Student( RoLL )
+
+);
+
+
