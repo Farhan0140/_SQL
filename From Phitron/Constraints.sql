@@ -13,3 +13,18 @@ CREATE TABLE student(
 );
 
 
+-- Type - 2:
+
+CREATE TABLE student(
+
+    Roll CHAR(4),
+    Name VARCHAR(50) NOT NULL,
+    Email VARCHAR(50),
+    Address VARCHAR(255),
+    Age INT,
+    
+    PRIMARY KEY(Roll),
+    UNIQUE(Email),
+    CHECK(Age > 10)
+
+);
