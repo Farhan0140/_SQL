@@ -47,7 +47,7 @@ CREATE TABLE student(
 );
 
 
--- Type - 4 Constraints with name:
+-- Type - 4 Constraints with name:  When some rule is violated it shows the rule name
 
 CREATE TABLE student(
 
