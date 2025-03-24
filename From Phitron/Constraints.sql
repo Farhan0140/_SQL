@@ -28,3 +28,39 @@ CREATE TABLE student(
     CHECK(Age > 10)
 
 );
+
+
+-- Type - 3:
+
+CREATE TABLE student(
+
+    Roll CHAR(4),
+    Name VARCHAR(50),
+    Email VARCHAR(50),
+    Address VARCHAR(255),
+    Age INT,
+
+    Constraint PRIMARY KEY(Roll),
+    Constraint UNIQUE(Email),
+    Constraint CHECK(Age > 10)
+
+);
+
+
+-- Type - 4 Constraints with name:
+
+CREATE TABLE student(
+
+    Roll CHAR(4),
+    Name VARCHAR(50),
+    Email VARCHAR(50),
+    Address VARCHAR(255),
+    Age INT,
+
+    Constraint pk_rule PRIMARY KEY(Roll),
+    Constraint unique_rule UNIQUE(Email),
+    Constraint checking_rule CHECK(Age > 10)
+
+);
+
+
