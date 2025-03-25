@@ -6,3 +6,5 @@
 2. [Select & Whare_Clause](https://github.com/Farhan0140/_SQL/blob/main/From%20Apna%20College/3_Select%20%26%20Whare_Clause.sql)
 
 3. [Arithmatic Operators](https://github.com/Farhan0140/_SQL/blob/main/From%20Phitron/Arithmatic%20Operators.sql)
+
+4. [Comparison Operators](https://github.com/Farhan0140/_SQL/blob/main/From%20Phitron/Comparison%20Operators.SQL)
