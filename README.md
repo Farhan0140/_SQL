@@ -8,3 +8,5 @@
 3. [Arithmatic Operators](https://github.com/Farhan0140/_SQL/blob/main/From%20Phitron/Arithmatic%20Operators.sql)
 
 4. [Comparison Operators](https://github.com/Farhan0140/_SQL/blob/main/From%20Phitron/Comparison%20Operators.SQL)
+
+5. [Comparison Operators](https://github.com/Farhan0140/_SQL/blob/main/From%20Apna%20College/4_Operators.sql)
