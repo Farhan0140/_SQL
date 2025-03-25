@@ -33,19 +33,32 @@ VALUES
 
 
 ----------------------> AND
-SELECT * FROM student WHERE marks > 80 AND marks <= 90;
+SELECT * FROM student 
+WHERE marks > 80 AND marks <= 90;
+
 
 ----------------------> OR
 SELECT * FROM student 
 WHERE marks > 90 OR cgpa > 3.00;
 
+
 ----------------------> BETWEEN
-SELECT * FROM student WHERE marks BETWEEN 90 AND 100;
+SELECT * FROM student 
+WHERE marks BETWEEN 90 AND 100;
+
 
 ----------------------> IN
-SELECT * FROM student WHERE country IN ("Namibia", "Falkland Islands", "Dhaka");
+SELECT * FROM student 
+WHERE country IN ("Namibia", "Falkland Islands", "Dhaka");
+
 
 ----------------------> NOT
-SELECT * FROM student WHERE country NOT IN ("Namibia", "Falkland Islands", "Dhaka");
+SELECT * FROM student 
+WHERE country NOT IN ("Namibia", "Falkland Islands", "Dhaka");
+
 
 ----------------------> BETWEEN
+SELECT * FROM student
+WHERE CGPA BETWEEN 2.50 AND 3.50;
+
+
