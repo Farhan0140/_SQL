@@ -9,4 +9,3 @@
 
 4. [Comparison Operators](https://github.com/Farhan0140/_SQL/blob/main/From%20Phitron/Comparison%20Operators.SQL)
 
-5. [Logical Operators](https://github.com/Farhan0140/_SQL/blob/main/From%20Apna%20College/4_Operators.sql)
