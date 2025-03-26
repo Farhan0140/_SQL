@@ -22,3 +22,5 @@
 10. [Aggregate Function](https://github.com/Farhan0140/_SQL/blob/main/From%20Apna%20College/7_Aggregate_Function.sql)
 
 11. [GROUP BY, HAVING](https://github.com/Farhan0140/_SQL/blob/main/From%20Phitron/GROUP%20BY%2C%20HAVING.sql)
+
+12. [ALTER TABLE](https://github.com/Farhan0140/_SQL/blob/main/From%20Apna%20College/9_Table_Related_Queries(2).sql)
