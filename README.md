@@ -16,3 +16,5 @@
 7. [LIKE, AS](https://github.com/Farhan0140/_SQL/blob/main/From%20Phitron/LIKE%2C%20AS.sql)
 
 8. [UPDATE, DELETE](https://github.com/Farhan0140/_SQL/blob/main/From%20Apna%20College/9_Table_Related_Queries.sql)
+
+9. [Functions](https://github.com/Farhan0140/_SQL/blob/main/From%20Phitron/Functions.sql)
