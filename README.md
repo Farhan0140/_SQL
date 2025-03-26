@@ -24,3 +24,5 @@
 11. [GROUP BY, HAVING](https://github.com/Farhan0140/_SQL/blob/main/From%20Phitron/GROUP%20BY%2C%20HAVING.sql)
 
 12. [ALTER TABLE](https://github.com/Farhan0140/_SQL/blob/main/From%20Apna%20College/9_Table_Related_Queries(2).sql)
+
+13. [Sub Queries](https://github.com/Farhan0140/_SQL/blob/main/From%20Apna%20College/14_Sub_Queries.sql)
