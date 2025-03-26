@@ -18,13 +18,11 @@ VALUES
 
 
 -- For Both Side
-
 SELECT * FROM employee_details
 WHERE emp_name LIKE '%PAVAN%';
 
 
 -- For Left Side
-
 SELECT * FROM employee_details
 WHERE emp_name LIKE '%PAVAN';
 
