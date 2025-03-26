@@ -1,0 +1,57 @@
+Problem
+https://docs.google.com/document/d/1QnMnU0D0F7_vWx9eaGruQ-78s5XYDIypMmJ1k1Zz_IQ/edit?tab=t.0
+
+Solution
+https://docs.google.com/document/d/1RyRPYwdUy93hHtIB9nzCsHNd12u08WFbrOjlFADC-bE/edit?tab=t.0
+
+
+---------------------------------------------------------------------------------------------------
+
+CREATE TABLE Employee (
+    EmployeeID INT PRIMARY KEY,
+    FirstName VARCHAR(50),
+    LastName VARCHAR(50),
+    Age INT,
+    Department VARCHAR(50)
+);
+
+INSERT INTO Employee (EmployeeID, FirstName, LastName, Age, Department) VALUES
+(1, 'John', 'Doe', 28, 'Sales'),
+(2, 'Jane', 'Smith', 32, 'Marketing'),
+(3, 'Michael', 'Johnson', 35, 'Finance'),
+(4, 'Sarah', 'Brown', 30, 'HR'),
+(5, 'William', 'Davis', 25, 'Engineering'),
+(6, 'Emily', 'Wilson', 28, 'Sales'),
+(7, 'Robert', 'Lee', 33, 'Marketing'),
+(8, 'Laura', 'Hall', 29, 'Finance'),
+(9, 'Thomas', 'White', 31, 'HR'),
+(10, 'Olivia', 'Clark', 27, 'Engineering');
+
+
+-- 5
+SELECT DISTINCT Department
+FROM Employee;
+
+
+-- 6
+SELECT LastName 
+FROM employee
+ORDER BY Age DESC;
+
+-- 7
+SELECT LastName 
+FROM employee
+WHERE Age > 30 AND Department = 'Marketing';
+
+
+-- 8
+SELECT * FROM employee;
+
+
+-- 9
+SELECT * FROM employee
+WHERE FirstName LIKE '%son%' OR LastName LIKE '%son%';
+
+-- 10
+SELECT * FROM employee
+WHERE Department = 'Engineering';
