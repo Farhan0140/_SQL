@@ -12,3 +12,5 @@
 5. [Logical Operators](https://github.com/Farhan0140/_SQL/blob/main/From%20Apna%20College/4_Operators.sql)
 
 6. [DISTINCT, ORDER BY, LIMIT, OFFSET](https://github.com/Farhan0140/_SQL/blob/main/From%20Phitron/DISTINCT%2C%20ORDER%20BY%2C%20LIMIT%2C%20OFFSET.sql)
+
+7. [LIKE, AS](https://github.com/Farhan0140/_SQL/blob/main/From%20Phitron/LIKE%2C%20AS.sql)
