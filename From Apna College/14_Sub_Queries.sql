@@ -94,3 +94,31 @@ FROM (
 SELECT MAX(marks)
 FROM student
 WHERE city = "Dhaka";
+
+
+
+-- database https://github.com/Farhan0140/_SQL/blob/main/Dummy_DataBase
+
+
+-- A company wants to identify employees who earn more than their direct managers
+SELECT * 
+FROM employees AS emp 
+WHERE salary > (
+
+    SELECT salary
+    FROM employees AS mng
+    WHERE emp.manager_id = mng.employee_id
+
+); 
+
+
+-- write a SQL query that retrieves all employees who have the same job_id as their direct manager
+SELECT * 
+FROM employees AS emp 
+WHERE job_id = (
+
+    SELECT job_id
+    FROM employees AS mng
+    WHERE emp.manager_id = mng.employee_id
+
+);
