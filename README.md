@@ -26,3 +26,12 @@
 12. [ALTER TABLE](https://github.com/Farhan0140/_SQL/blob/main/From%20Apna%20College/9_Table_Related_Queries(2).sql)
 
 13. [Sub Queries](https://github.com/Farhan0140/_SQL/blob/main/From%20Apna%20College/14_Sub_Queries.sql)
+
+
+
+
+
+
+
+## ⭐ **Star This Repository!**
+If you find this repository helpful, don't forget to **star** it!
