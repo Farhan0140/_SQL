@@ -19,19 +19,16 @@ VALUES
 
 
 -- DISTINCT
-
 SELECT DISTINCT emp_designation
 FROM employee_details;
 
 
 -- ORDER BY ASCENDING
-
 SELECT * FROM employee_details
 ORDER BY emp_age ASC;
 
 
 -- ORDER BY DESCENDING
-
 SELECT * FROM employee_details
 ORDER BY emp_age DESC;
 
