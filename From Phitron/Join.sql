@@ -82,3 +82,13 @@ FROM employees
         USING(department_id);
 
 
+
+-- SELF JOIN
+SELECT emp.first_name AS manager_name, mana.first_name
+FROM employees AS emp
+    JOIN employees AS mana
+    ON emp.employee_id = mana.manager_id; 
+
+
+
+--
