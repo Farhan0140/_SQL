@@ -38,4 +38,33 @@ SELECT emp_name AS Name -- Showing emp_name as a Name in a column name
 FROM employee_details;
 
 
+
+
+-- database https://github.com/Farhan0140/_SQL/blob/main/Dummy_DataBase
+
+-- Find departments where the average salary is higher than the overall average salary
+WITH avg_depts AS (
+
+    SELECT department_id, AVG(salary) AS avg_salary
+    FROM employees
+    GROUP BY department_id
+
+)
+SELECT department_id, (
+
+    SELECT department_name
+    FROM departments
+    WHERE departments.department_id = avg_depts.department_id
+
+), avg_salary 
+FROM avg_depts
+WHERE avg_salary > (
+
+    SELECT AVG(salary)
+    FROM employees
+
+)
+ORDER BY avg_salary ASC;
+ORDER BY department_id ASC;
+
 --
