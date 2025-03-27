@@ -122,3 +122,83 @@ WHERE job_id = (
     WHERE emp.manager_id = mng.employee_id
 
 );
+
+
+-- Determine the third highest salary and which employee receives it?
+SELECT * FROM employees
+WHERE salary = (
+
+    SELECT MAX(salary) 
+    FROM employees
+    WHERE salary < (
+
+        SELECT MAX(salary) 
+        FROM employees
+        WHERE salary < (
+
+            SELECT MAX(salary) 
+            FROM employees
+
+        )
+
+    )
+
+);
+
+-- OR
+SELECT * FROM employees
+WHERE salary = (
+
+    SELECT DISTINCT salary
+    FROM employees
+    ORDER BY salary DESC
+    LIMIT 1
+    OFFSET 2
+
+);
+
+
+-- Determine the third lowest salary and which employee receives it?
+SELECT * FROM employees
+WHERE salary = (
+
+    SELECT MIN(salary) 
+    FROM employees
+    WHERE salary > (
+
+        SELECT MIN(salary) 
+        FROM employees
+        WHERE salary > (
+
+            SELECT MIN(salary) 
+            FROM employees
+
+        )
+
+    )
+
+);
+
+-- OR
+SELECT * FROM employees
+WHERE salary = (
+
+    SELECT DISTINCT salary
+    FROM employees
+    ORDER BY salary ASC
+    LIMIT 2, 1
+
+);
+
+
+-- Which employee has been hired after Steven?
+SELECT * FROM employees
+WHERE hire_date > (
+
+    SELECT hire_date FROM employees
+    WHERE first_name = 'Steven'
+    LIMIT 1
+
+);
+
+--
