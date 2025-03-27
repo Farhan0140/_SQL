@@ -20,7 +20,9 @@ WHERE employees.department_id = departments.department_id;
 
 
 
+-- INNER JOIN or JOIN
 -- Joining Tables using JOIN Query
+
 SELECT employees.first_name, departments.department_name
 FROM employees
     JOIN departments
@@ -32,3 +34,51 @@ SELECT employees.first_name, departments.department_name
 FROM employees
     JOIN departments
     USING(department_id);
+
+-- Same
+SELECT employees.first_name, departments.department_name
+FROM employees
+    INNER JOIN departments
+    USING(department_id);
+
+
+
+-- LEFT JOIN 
+
+SELECT employees.first_name, departments.department_name
+FROM employees
+    LEFT JOIN departments
+    USING(department_id);
+
+
+
+-- RIGHT JOIN 
+
+SELECT employees.first_name, departments.department_name
+FROM employees
+    RIGHT JOIN departments
+    USING(department_id);
+
+
+
+-- CROSS JOIN or FULL JOIN
+
+SELECT employees.first_name, departments.department_name
+FROM employees
+    CROSS JOIN departments
+    USING(department_id);
+
+-- OR
+SELECT employees.first_name, departments.department_name
+FROM employees
+    LEFT JOIN departments
+    USING(department_id)
+
+    UNION
+
+    SELECT employees.first_name, departments.department_name
+    FROM employees
+        RIGHT JOIN departments
+        USING(department_id);
+
+
