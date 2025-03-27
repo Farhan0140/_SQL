@@ -201,4 +201,17 @@ WHERE hire_date > (
 
 );
 
---
+
+-- Find employee who earn more than average salary
+SELECT * FROM employees;
+
+SELECT AVG(salary) 
+FROM employees;
+
+SELECT * FROM employees
+WHERE salary > (
+
+    SELECT AVG(salary) 
+    FROM employees
+
+);
