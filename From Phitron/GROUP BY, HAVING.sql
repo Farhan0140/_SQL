@@ -114,3 +114,45 @@ WHERE grade = "A"
 GROUP BY country
 HAVING MAX(cgpa) >= 3.00
 ORDER BY country DESC;
+
+
+
+
+-- database https://github.com/Farhan0140/_SQL/blob/main/Dummy_DataBase
+
+-- Count the number of employees in each job title
+SELECT * FROM employees;
+SELECT * FROM jobs;
+
+SELECT job_id , COUNT(*)
+FROM employees
+GROUP BY job_id;
+
+
+SELECT job_id , COUNT(*) AS cnt
+FROM employees
+GROUP BY job_id
+HAVING cnt > 1
+ORDER BY cnt ASC;
+
+
+-- Find departments where the average salary is higher than the overall average salary
+SELECT * FROM employees;
+SELECT * FROM departments;
+
+
+SELECT department_id, (
+
+    SELECT department_name 
+    FROM departments
+    WHERE employees.department_id = departments.department_id
+
+), AVG(salary) AS avg_salary
+FROM employees
+GROUP BY department_id
+HAVING avg_salary > (
+
+    SELECT AVG(salary)
+    FROM employees
+
+);
