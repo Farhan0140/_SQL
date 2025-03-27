@@ -28,6 +28,8 @@
 13. [Sub Queries](https://github.com/Farhan0140/_SQL/blob/main/From%20Apna%20College/14_Sub_Queries.sql)
 
 
+14. [Common Table Expressions (WITH AS)](https://github.com/Farhan0140/_SQL/blob/main/From%20Phitron/Common%20Table%20Expressions%20(WITH%20AS).sql)
+
 
 
 
