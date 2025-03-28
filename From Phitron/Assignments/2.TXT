@@ -1,0 +1,10 @@
+PROBLEMS
+https://docs.google.com/document/d/1IkK4jrJsP0ltVVpWb0cPilyb5eyHMbFebjyY3zKka0A/edit?tab=t.0
+
+
+Solution
+https://docs.google.com/document/d/1mY5EjnlD92zH-32W2eMM-QAKrCr3CdfUEThZDGNVJKg/edit?usp=sharing
+
+
+DATABASE
+https://github.com/Farhan0140/_SQL/blob/main/Dummy_DataBase
