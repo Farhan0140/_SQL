@@ -32,10 +32,11 @@
 
 15. [JOIN](https://github.com/Farhan0140/_SQL/blob/main/From%20Phitron/Join.sql)
 
+16. [Set Operations](https://github.com/Farhan0140/_SQL/blob/main/From%20Phitron/Set%20Operations.sql)
 
 
 
-
+. [Control Flow Functions]()
 
 ## ⭐ **Star This Repository!**
 If you find this repository helpful, don't forget to **star** it!
