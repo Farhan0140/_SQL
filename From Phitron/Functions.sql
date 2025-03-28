@@ -11,6 +11,15 @@
 SELECT MID("SQL Tutorial", 5, 2) AS ExtractString; -- Tu
 SELECT MID("SQL Tutorial", -5, 3) AS ExtractString; -- ori
 
+-- SUBSTR
+SELECT SUBSTR("SQL Tutorial", 5, 3) AS ExtractString; -- Tut
+
+-- SUBSTRING_INDEX
+SELECT SUBSTRING_INDEX("www.w3schools.com", ".", 1); -- www
+SELECT SUBSTRING_INDEX("www.w3schools.com", ".", 2); -- www.w3schools
+
+-- CONCAT
+SELECT CONCAT('Far', 'han'); -- Farhan
 
 
 -- UPPER
