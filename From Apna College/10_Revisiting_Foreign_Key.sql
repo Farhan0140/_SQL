@@ -18,16 +18,32 @@ SET id = 169        -----> It updates the  teacher table too,,  Because of ON UP
 WHERE id = 104;                                         ----> If we don't use UPDATE CASCADE & ON DELETE CASCADE nothing change on Teacher Table
 
 
-------------------------------------> FOREIGN KEY
+------------------------------------> FOREIGN KEY -- ON UPDATE/DELETE CASCADE
 
 CREATE TABLE teacher (
     id INT PRIMARY KEY,
     name VARCHAR(100) NOT NULL,
     dept_id INT,
     FOREIGN KEY(dept_id) REFERENCES dept(id)
+
     ON UPDATE CASCADE
     ON DELETE CASCADE
 );
+
+
+
+------------------------------------> FOREIGN KEY -- ON DELETE SET NULL
+CREATE TABLE teacher (
+    id INT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    dept_id INT,
+    FOREIGN KEY(dept_id) REFERENCES dept(id)
+    ON UPDATE CASCADE
+    ON DELETE SET NULL
+);
+
+
+
 
 INSERT INTO teacher (id, name, dept_id)
 VALUES
