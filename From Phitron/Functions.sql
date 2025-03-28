@@ -1,3 +1,18 @@
+-- MID
+
+-- 1	2	3	4	5	6	7	8	9	10	11	12
+-- S	Q	L	 	T	u	t	o	r	i	a	l
+
+-- Note: The position of the last character in the string is -1.
+
+-- -12	-11	-10	-9	-8	-7	-6	-5	-4	-3	-2	-1
+--  S 	 Q	 L	 	 T	 u	 t	 o	 r	 i	 a	 l
+
+SELECT MID("SQL Tutorial", 5, 2) AS ExtractString; -- Tu
+SELECT MID("SQL Tutorial", -5, 3) AS ExtractString; -- ori
+
+
+
 -- UPPER
 SELECT UPPER('farhAn NadiM'); -- FARHAN NADIM
 
