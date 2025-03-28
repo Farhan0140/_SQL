@@ -34,6 +34,7 @@
 
 16. [Set Operations](https://github.com/Farhan0140/_SQL/blob/main/From%20Phitron/Set%20Operations.sql)
 
+17. [Revisiting Foreign Key](https://github.com/Farhan0140/_SQL/blob/main/From%20Apna%20College/10_Revisiting_Foreign_Key.sql)
 
 
 . [Control Flow Functions]()
