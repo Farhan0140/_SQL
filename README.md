@@ -37,7 +37,7 @@
 17. [Revisiting Foreign Key](https://github.com/Farhan0140/_SQL/blob/main/From%20Apna%20College/10_Revisiting_Foreign_Key.sql)
 
 
-. [Control Flow Functions]()
+18. [Control Flow Functions](https://github.com/Farhan0140/_SQL/blob/main/From%20Phitron/Control%20Flow%20Functions.sql)
 
 ## ⭐ **Star This Repository!**
 If you find this repository helpful, don't forget to **star** it!
