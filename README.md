@@ -39,5 +39,7 @@
 
 18. [Control Flow Functions](https://github.com/Farhan0140/_SQL/blob/main/From%20Phitron/Control%20Flow%20Functions.sql)
 
+19. [Python & MysQL](https://github.com/Farhan0140/Python/tree/main/Python%20%26%20MysQL)
+
 ## ⭐ **Star This Repository!**
 If you find this repository helpful, don't forget to **star** it!
