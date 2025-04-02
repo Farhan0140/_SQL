@@ -42,3 +42,52 @@
 
 ## ⭐ **Star This Repository!**
 If you find this repository helpful, don't forget to **star** it!
+
+## 📂 **Repository Structure**
+
+```
+│   .gitattributes
+│   Dummy_DataBase
+│   README.md
+│
+├───ERD ( Entity Relationship Diagram )
+│       Database Design Strategies
+│
+├───From Apna College
+│       10_Revisiting_Foreign_Key.sql
+│       11_Exclusive_Join.sql
+│       11_Joins_In_SQL.sql
+│       12_Self_Join.sql
+│       13_Union.sql
+│       14_Sub_Queries.sql
+│       15_Views.sql
+│       1_Create_Delete_USE.sql
+│       2_Constraints.sql
+│       3_Select & Whare_Clause.sql
+│       4_Operators.sql
+│       5_Limit_Clause.sql
+│       6_Order_BY_clause.sql
+│       7_Aggregate_Function.sql
+│       7_Group_BY_Clause.sql
+│       8_Having_Clause.sql
+│       9_Table_Related_Queries(2).sql
+│       9_Table_Related_Queries.sql
+│
+└───From Phitron
+    │   Arithmatic Operators.sql
+    │   Common Table Expressions (WITH AS).sql
+    │   Comparison Operators.SQL
+    │   Constraints.sql
+    │   Control Flow Functions.sql
+    │   DISTINCT, ORDER BY, LIMIT, OFFSET.sql
+    │   Functions.sql
+    │   GROUP BY, HAVING.sql
+    │   Join.sql
+    │   LIKE, AS.sql
+    │   Set Operations.sql
+    │
+    └───Assignments
+            1.TXT
+            2.TXT
+            3.txt
+```
