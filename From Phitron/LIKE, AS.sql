@@ -67,4 +67,22 @@ WHERE avg_salary > (
 ORDER BY avg_salary ASC;
 ORDER BY department_id ASC;
 
---
+
+
+-- https://leetcode.com/problems/game-play-analysis-iv/
+WITH status AS (
+    SELECT player_id, MIN(event_date) AS first_date
+    FROM Activity
+    GROUP BY player_id
+), 
+logged_user AS (
+    SELECT Activity.player_id
+    FROM Activity
+        JOIN status
+        ON Activity.player_id = status.player_id
+    WHERE datediff(Activity.event_date, status.first_date) = 1
+)
+SELECT ROUND( COUNT(logged_user.player_id ) / 
+              ( SELECT COUNT( DISTINCT player_id) 
+                FROM Activity ), 2 ) AS fraction
+FROM logged_user;
